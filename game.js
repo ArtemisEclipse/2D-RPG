@@ -786,7 +786,6 @@ scene("level 1" , ({ level }) => {
         go("level 1", {level: 0})
     })
 
-window.onload = function () {
     scene('main', () => {
         add([
            text('The Lionheart Knight',6),
@@ -803,5 +802,4 @@ window.onload = function () {
             go("tutorial", {level: 1})
         })
     })
-    go("main" , { level: 0 })
-}    
+        go("main" , { level: 0 }) 
