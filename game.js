@@ -794,8 +794,14 @@ window.onload = function () {
            origin('center') 
         ]);
         add([
-            text('Start')
+            text('Press enter to begin'),
+            pos(width()/2, height()/2),
+            origin('center')
         ])
+
+        onKeyDown('enter', () => {
+            go("tutorial", {level: 1})
+        })
     })
     go("main" , { level: 0 })
 }    
